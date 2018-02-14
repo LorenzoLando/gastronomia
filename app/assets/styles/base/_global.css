@@ -1,14 +1,25 @@
 
 body {
 	font-family: 'Pacifico', cursive, sans-serif;
-	color: #FFF;
+	
 }
 
 
 ul {
 	list-style: none;
 }
+
 a {
+
 	text-decoration: none;
+	/*nb you nedd to make the links to scale slightly on hover*/
+	
 }
+
+
+
+
+
+
+
 

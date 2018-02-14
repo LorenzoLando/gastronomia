@@ -346,7 +346,7 @@ template {
 
 body {
 	font-family: 'Pacifico', cursive, sans-serif;
-	color: #FFF;
+	
 }
 
 ul {
@@ -354,7 +354,10 @@ ul {
 }
 
 a {
+
 	text-decoration: none;
+	/*nb you nedd to make the links to scale slightly on hover*/
+	
 }
 
 .large-hero {
@@ -407,3 +410,11 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+.btn {
+	display: inline-block;
+	color: white;
+	padding: 1.25rem 1.875rem; 
+	background-color: rgb(244, 209, 66);
+	
+}
