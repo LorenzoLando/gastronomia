@@ -1,0 +1,15 @@
+.bottom-header {
+	height: 125px;
+	display: flex;
+	flex-direction: row;
+
+	&__logo {
+		font-family: 'Playball', cursive;
+		font-size: .6rem;
+		background-color: $mainColor;
+		border-radius: 15px;
+
+	}
+
+
+}

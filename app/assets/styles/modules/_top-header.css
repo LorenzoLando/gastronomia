@@ -1,0 +1,28 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playball', cursive;
+font-family: 'Merienda', cursive;
+*/
+
+.top-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	background-color: $mainColor;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	color: #FFF;
+	height: 48px;
+
+	&__icon {
+		margin-right: 10px;
+		
+	}
+
+	&__text {
+		margin-right: 229px;
+	}
+
+
+}

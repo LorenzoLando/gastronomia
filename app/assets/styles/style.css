@@ -3,6 +3,7 @@
 @import "base/_global.css";
 @import "base/_variables.css";
 @import "base/_mixins.css";
-@import "modules/_large-hero.css";
+@import "modules/_top-header.css";
 @import "modules/_btn.css";
 @import "modules/_foot.css";
+@import "modules/_bottom-header.css";

@@ -1,10 +1,4 @@
 
-body {
-	font-family: 'Pacifico', cursive, sans-serif;
-	
-}
-
-
 ul {
 	list-style: none;
 }
@@ -12,8 +6,7 @@ ul {
 a {
 
 	text-decoration: none;
-	/*nb you nedd to make the links to scale slightly on hover*/
-	
+	color: inherit;
 }
 
 
