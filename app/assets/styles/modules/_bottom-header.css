@@ -2,14 +2,47 @@
 	height: 125px;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	-webkit-box-shadow: 1px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    1px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         1px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	background-color: #FFF;
 
 	&__logo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		font-family: 'Playball', cursive;
 		font-size: .6rem;
+		color: #FFF;
 		background-color: $mainColor;
-		border-radius: 15px;
+		padding: 0 15px;
+		border-radius: 100px;
 
+
+		h2 {
+			text-align: center;
+		}
 	}
 
+
+	&__navigation {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		color: $mainColor;
+		width: 75%;
+		margin-right: 0;
+		
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+			margin-top: 0;
+
+		}
+	}
 
 }

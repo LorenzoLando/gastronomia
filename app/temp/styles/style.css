@@ -360,6 +360,13 @@ font-family: 'Playball', cursive;
 font-family: 'Merienda', cursive;
 */
 
+.main-header {
+	position: fixed;
+	width: 100vw;
+	top: -5px;
+
+}
+
 .top-header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -413,14 +420,159 @@ font-family: 'Merienda', cursive;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-shadow: 1px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         1px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	background-color: #FFF;
 
 }
 
 .bottom-header__logo {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		font-family: 'Playball', cursive;
 		font-size: .6rem;
+		color: #FFF;
 		background-color: #A51D29;
-		border-radius: 15px;
+		padding: 0 15px;
+		border-radius: 100px;
+	}
+
+.bottom-header__logo h2 {
+			text-align: center;
+		}
+
+.bottom-header__navigation {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		color: #A51D29;
+		width: 75%;
+		margin-right: 0;
+	}
+
+.bottom-header__navigation ul {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			height: 100%;
+			margin-top: 0;
+
+		}
+
+.main-image {
+	height: 100vh;
+	width: 100vw;
+	/*quando usi postss la poszione del css e` nella cartella temp*/
+	background-image: url("../../assets/images/gastronomia.jpg");
+	background-repeat: no-repeat;
+	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.section__icon {
+		margin-left: 48%;
+		margin-top: 79px;
+		text-align: center;
+		height: 48px;
+		width: 55px;
+		padding: 10px;
+		border: 2px solid #A51D29;
+		border-radius: 50px;
+	}
+
+.section__title {
+		font-family: 'Playball', cursive;
+		font-size: 45px;
+		font-weight: 300;
+		line-height: 68px;
+		color: #f9a258;
+		width: 55%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+.section__paragraph {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 24px;
+		color: #101010;
+		width: 80%;
+		margin: 30px auto;
+		text-align: center;
 
 	}
+
+.section__btn {
+		display: block;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		color: #ffffff;
+		background-color: #A51D29;
+		width: 281px;
+		height: 41px;
+		text-align:center;
+		line-height:41px;
+		margin: 30px auto;
+
+		
+	}
+
+.menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	/*quando usi postss la poszione del css e` nella cartella temp*/
+	background-image: url("../../assets/images/gastronomia.jpg");
+	background-repeat: no-repeat;
+	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+
+}
+
+.menu__div {
+    	height: 306px;
+    	width: 643px;
+    	background-color: #FBF5EC;
+    }
+
+.menu__title {
+    	font-family: 'Playball', cursive;
+    	font-size: 3.4375rem;
+    	font-weight: 300;
+    	text-align: center
+    }

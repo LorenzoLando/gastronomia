@@ -1,0 +1,29 @@
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	/*quando usi postss la poszione del css e` nella cartella temp*/
+	background-image: url("../../assets/images/gastronomia.jpg");
+	background-repeat: no-repeat;
+	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+
+    &__div {
+    	height: 306px;
+    	width: 643px;
+    	background-color: #FBF5EC;
+    }
+
+    &__title {
+    	font-family: 'Playball', cursive;
+    	font-size: 3.4375rem;
+    	font-weight: 300;
+    	text-align: center
+    }
+
+}

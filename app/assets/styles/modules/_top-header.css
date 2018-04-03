@@ -4,6 +4,13 @@ font-family: 'Playball', cursive;
 font-family: 'Merienda', cursive;
 */
 
+.main-header {
+	position: fixed;
+	width: 100vw;
+	top: -5px;
+
+}
+
 .top-header {
 	display: flex;
 	flex-direction: row;

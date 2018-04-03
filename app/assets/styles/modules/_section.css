@@ -1,0 +1,58 @@
+.section {
+
+
+	
+
+	&__icon {
+		margin-left: 48%;
+		margin-top: 79px;
+		text-align: center;
+		height: 48px;
+		width: 55px;
+		padding: 10px;
+		border: 2px solid $mainColor;
+		border-radius: 50px;
+	}
+	
+
+	&__title {
+		font-family: 'Playball', cursive;
+		font-size: 45px;
+		font-weight: 300;
+		line-height: 68px;
+		color: #f9a258;
+		width: 55%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	&__paragraph {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 24px;
+		color: #101010;
+		width: 80%;
+		margin: 30px auto;
+		text-align: center;
+
+	}
+
+	&__btn {
+		display: block;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		color: #ffffff;
+		background-color: $mainColor;
+		width: 281px;
+		height: 41px;
+		text-align:center;
+		line-height:41px;
+		margin: 30px auto;
+
+		
+	}
+
+
+}
