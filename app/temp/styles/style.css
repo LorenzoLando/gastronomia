@@ -538,8 +538,13 @@ font-family: 'Merienda', cursive;
 		line-height:41px;
 		margin: 30px auto;
 
-		
 	}
+
+.section--2 {
+	height: 484px;
+	width: 100vw;
+	padding-top: 92px;
+}
 
 .menu {
 	display: -webkit-box;
@@ -576,3 +581,34 @@ font-family: 'Merienda', cursive;
     	font-weight: 300;
     	text-align: center
     }
+
+/*<img src="assets/images/pasta-fresca.jpg">
+	<img src="assets/images/catering.jpg">
+	<img src="assets/images/gallery.jpg">
+*/
+
+.gallery {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 941px;
+	height: 259px;
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+
+}
+
+.gallery__element {
+		width: 32%;
+		height: 100%;
+		background-color: blue;
+	}
