@@ -344,6 +344,11 @@ template {
   display: none;
 }
 
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
 ul {
 	list-style: none;
 }
@@ -600,7 +605,6 @@ font-family: 'Merienda', cursive;
 	        justify-content: space-between;
 	width: 941px;
 	height: 259px;
-	background-color: red;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -608,7 +612,101 @@ font-family: 'Merienda', cursive;
 }
 
 .gallery__element {
-		width: 32%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		width: 33%;
 		height: 100%;
-		background-color: blue;
 	}
+
+.gallery__picture-1 {
+		height: 80%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: black; /* fallback color */
+		background-image: url("../../assets/images/pasta-fresca.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+.gallery__picture-1:hover {
+		background-size: 120%;
+		-webkit-transition:all 0.5s ease;
+		transition:all 0.5s ease;
+
+	}
+
+.gallery__picture-2 {
+		height: 80%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-image: url("../../assets/images/catering.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+
+	}
+
+.gallery__picture-2:hover {
+		background-size: 120%;
+		-webkit-transition:all 0.5s ease;
+		transition:all 0.5s ease;
+
+	}
+
+.gallery__picture-3 {
+		height: 80%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background-image: url("../../assets/images/gallery.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+.gallery__picture-3:hover {
+		background-size: 120%;
+		-webkit-transition:all 0.5s ease;
+		transition:all 0.5s ease;
+
+	}
+
+.gallery__paragraph {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1.125rem;
+		font-weight: 700;
+		height: 20%;
+		width: 100%;
+		background-color: #A51D29;
+		margin: 0;
+		color: #f9a258;
+	}
+
+.gallery__picture-1:hover {
+	background-size: 120%;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+.gallery__picture-1:hover {
+	background-size: 120%;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
