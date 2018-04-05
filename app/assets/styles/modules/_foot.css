@@ -1,4 +1,38 @@
 .foot {
-
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	height: 30vh;
+	width: auto;
+
+	&__top {
+		height: 80%;
+	}
+
+
+	&__title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: $mainColor;
+		margin-top: 15px;
+	}
+
+
+	&__paragraph {
+		font-weight: 400;
+	}
+
+	&__social {
+		img {
+			height: 49px;
+			width: 49px;
+		}
+	}
+
+	&__bottom {
+		background-color: #111111;
+		font-size: 0.875rem;
+		color: #ffffff;
+		height: 20%; 
+	}
+
 }

@@ -347,6 +347,8 @@ template {
 * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 ul {
@@ -412,9 +414,39 @@ font-family: 'Merienda', cursive;
 }
 
 .foot {
-
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
+	height: 30vh;
+	width: auto;
+
 }
+
+.foot__top {
+		height: 80%;
+	}
+
+.foot__title {
+		font-size: 1.25rem;
+		font-weight: 700;
+		color: #A51D29;
+		margin-top: 15px;
+	}
+
+.foot__paragraph {
+		font-weight: 400;
+	}
+
+.foot__social img {
+			height: 49px;
+			width: 49px;
+		}
+
+.foot__bottom {
+		background-color: #111111;
+		font-size: 0.875rem;
+		color: #ffffff;
+		height: 20%; 
+	}
 
 .bottom-header {
 	height: 125px;
