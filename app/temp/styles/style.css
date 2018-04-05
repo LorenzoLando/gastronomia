@@ -463,6 +463,8 @@ font-family: 'Merienda', cursive;
 		color: #A51D29;
 		width: 75%;
 		margin-right: 0;
+
+
 	}
 
 .bottom-header__navigation ul {
@@ -483,6 +485,12 @@ font-family: 'Merienda', cursive;
 			margin-top: 0;
 
 		}
+
+.bottom-header__navigation ul li:hover {
+				text-decoration: underline;
+				-webkit-transition:all 0.2s ease;
+				transition:all 0.2s ease;
+			}
 
 .main-image {
 	height: 100vh;
@@ -710,3 +718,104 @@ font-family: 'Merienda', cursive;
 	-webkit-transition:all 0.5s ease;
 	transition:all 0.5s ease;
 }
+
+.piatti-veloci {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	
+}
+
+.piatti-veloci__text {
+		width: 50%;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+.piatti-veloci__img {
+		width: 50%;
+	}
+
+.piatti-veloci__img img {
+			width: 100%;
+			height: auto;
+		}
+
+.specialita-gastronomiche {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	
+
+}
+
+.specialita-gastronomiche__text {
+		width: 50%;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+.specialita-gastronomiche__img {
+		width: 50%;
+	}
+
+.specialita-gastronomiche__img img {
+			width: 100%;
+			height: auto;
+		}
+
+.before-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	height: 60vh;
+	width: 100vw;
+	/*quando usi postss la poszione del css e` nella cartella temp*/
+	background-image: url("../../assets/images/lasagna.jpg");
+	background-repeat: no-repeat;
+	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.before-footer__icon {
+    	display: inline-block;
+    	-webkit-box-sizing: content-box;
+    	        box-sizing: content-box;
+    	height: 60px;
+		width: 60px;
+		padding: 20px;
+		border: 2px solid black;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #FFF;
+
+    }
+
+.before-footer__text {
+    	font-family: 'Open Sans', sans-serif;
+    	font-size: 1.875rem;
+    	font-weight: 400;
+    	line-height: 2.8125rem;
+    	color: #ffffff;
+    	text-align: center;
+    	width: 80%;
+    	margin: 0 auto -55px auto;
+    }

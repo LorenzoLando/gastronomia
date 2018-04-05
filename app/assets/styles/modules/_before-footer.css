@@ -1,0 +1,38 @@
+.before-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 60vh;
+	width: 100vw;
+	/*quando usi postss la poszione del css e` nella cartella temp*/
+	background-image: url("../../assets/images/lasagna.jpg");
+	background-repeat: no-repeat;
+	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+    background-attachment: fixed;
+    background-size: cover;
+
+    &__icon {
+    	display: inline-block;
+    	box-sizing: content-box;
+    	height: 60px;
+		width: 60px;
+		padding: 20px;
+		border: 2px solid black;
+		border-radius: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #FFF;
+
+    }
+
+    &__text {
+    	font-family: 'Open Sans', sans-serif;
+    	font-size: 1.875rem;
+    	font-weight: 400;
+    	line-height: 2.8125rem;
+    	color: #ffffff;
+    	text-align: center;
+    	width: 80%;
+    	margin: 0 auto -55px auto;
+    }
+}
