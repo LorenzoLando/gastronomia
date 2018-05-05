@@ -17,13 +17,19 @@
 
 	&__title {
 		font-family: 'Playball', cursive;
-		font-size: 45px;
+		font-size: 30px;
 		font-weight: 300;
-		line-height: 68px;
+		line-height: 50px;
 		color: #f9a258;
-		width: 55%;
+		width: 80%;
 		text-align: center;
 		margin: 0 auto;
+
+		@mixin atMedium {
+			font-size: 45px;
+			line-height: 68px;
+			width: 55%;
+		}
 	}
 
 	&__paragraph {
@@ -57,7 +63,14 @@
 }
 
 .section--2 {
-	height: 484px;
-	width: 100vw;
-	padding-top: 92px;
+	padding-top: 15px;
+	background-color: red;
+
+
+
+	@mixin atMedium {
+		height: 484px;
+		width: 100vw;
+		padding-top: 92px;
+	}
 }

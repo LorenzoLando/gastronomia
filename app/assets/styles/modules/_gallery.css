@@ -1,24 +1,38 @@
-
-/*<img src="assets/images/pasta-fresca.jpg">
-	<img src="assets/images/catering.jpg">
-	<img src="assets/images/gallery.jpg">
-*/
-
+/***************************************************************
+STILE PER LA GALLERY VERSIONE MOBILE
+**************************************************************/
 .gallery {
 	display: flex;
+	flex-direction: column;
+
+	&__paragraph{
+		display: none;
+	}
+
+}
+
+
+/****************************************************************
+STILE PER LA GALLERY VERSIONE DESKTOP
+*****************************************************************/
+
+@mixin atMedium {
+	.gallery {
+	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	width: 941px;
 	height: 259px;
+	margin-top: 20px;
+	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
 
 	&__element {
 		display: flex;
 		flex-direction: column;
 		width: 33%;
 		height: 100%;
+
 	}
 
 	&__picture-1 {
@@ -104,4 +118,7 @@
 	transition:all 0.5s ease;
 } 
 
+
+
+}
 

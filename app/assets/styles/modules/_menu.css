@@ -14,16 +14,26 @@
     z-index: -1;
 
     &__div {
-    	height: 306px;
-    	width: 643px;
+    	height: 45%;
+    	width: 80%;
     	background-color: #FBF5EC;
+
+        @mixin atMedium {
+            height: 306px;
+            width: 643px; 
+        }
     }
 
     &__title {
     	font-family: 'Playball', cursive;
-    	font-size: 3.4375rem;
+    	font-size: 3rem;
     	font-weight: 300;
-    	text-align: center
+    	text-align: center;
+        margin-top: 15%;
+
+        @mixin atMedium {
+          font-size: 3.4375rem;  
+        }
     }
 
 }

@@ -361,12 +361,6 @@ a {
 	color: inherit;
 }
 
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Playball', cursive;
-font-family: 'Merienda', cursive;
-*/
-
 .main-header {
 	position: fixed;
 	width: 100vw;
@@ -382,12 +376,11 @@ font-family: 'Merienda', cursive;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	background-color: #A51D29;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
+	font-size: .8rem;
 	font-weight: 400;
 	color: #FFF;
 	height: 48px;
@@ -395,13 +388,42 @@ font-family: 'Merienda', cursive;
 
 }
 
+@media (min-width: 800px) {
+
+.top-header {
+		font-size: 1rem;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end
+
+
+}
+	}
+
 .top-header__icon {
-		margin-right: 10px;
+		
+		margin-left: -30px;
 		
 	}
 
+@media (min-width: 800px) {
+
+.top-header__icon {
+			margin-right: 10px
+		
+	}
+	}
+
 .top-header__text {
-		margin-right: 229px;
+		
+		margin-top: 15px;
+	}
+
+@media (min-width: 800px) {
+
+.top-header__text {
+			margin-right: 229px
+	}
 	}
 
 .btn {
@@ -477,11 +499,24 @@ font-family: 'Merienda', cursive;
 		    -ms-flex-pack: center;
 		        justify-content: center;
 		font-family: 'Playball', cursive;
-		font-size: .6rem;
+		font-size: .5rem;
 		color: #FFF;
 		background-color: #A51D29;
-		padding: 0 15px;
+		padding: 0 5px;
 		border-radius: 100px;
+		width: 100px;
+		height: 100px;
+		margin-top: 15px;
+	}
+
+@media (min-width: 800px) {
+
+.bottom-header__logo {
+			font-size: .6rem;
+			padding: 0 15px;
+			width: none;
+			height: none
+	}
 	}
 
 .bottom-header__logo h2 {
@@ -500,9 +535,7 @@ font-family: 'Merienda', cursive;
 	}
 
 .bottom-header__navigation ul {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
+			display: none;
 			-webkit-box-orient: horizontal;
 			-webkit-box-direction: normal;
 			    -ms-flex-direction: row;
@@ -518,11 +551,15 @@ font-family: 'Merienda', cursive;
 
 		}
 
-.bottom-header__navigation ul li:hover {
-				text-decoration: underline;
-				-webkit-transition:all 0.2s ease;
-				transition:all 0.2s ease;
-			}
+@media (min-width: 800px) {
+
+.bottom-header__navigation ul {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex
+
+		}
+	}
 
 .main-image {
 	height: 100vh;
@@ -549,13 +586,22 @@ font-family: 'Merienda', cursive;
 
 .section__title {
 		font-family: 'Playball', cursive;
-		font-size: 45px;
+		font-size: 30px;
 		font-weight: 300;
-		line-height: 68px;
+		line-height: 50px;
 		color: #f9a258;
-		width: 55%;
+		width: 80%;
 		text-align: center;
 		margin: 0 auto;
+	}
+
+@media (min-width: 800px) {
+
+.section__title {
+			font-size: 45px;
+			line-height: 68px;
+			width: 55%
+	}
 	}
 
 .section__paragraph {
@@ -586,10 +632,18 @@ font-family: 'Merienda', cursive;
 	}
 
 .section--2 {
-	height: 484px;
-	width: 100vw;
-	padding-top: 92px;
+	padding-top: 15px;
+	background-color: red;
 }
+
+@media (min-width: 800px) {
+
+.section--2 {
+		height: 484px;
+		width: 100vw;
+		padding-top: 92px
+}
+	}
 
 .menu {
 	display: -webkit-box;
@@ -615,24 +669,59 @@ font-family: 'Merienda', cursive;
 }
 
 .menu__div {
-    	height: 306px;
-    	width: 643px;
+    	height: 45%;
+    	width: 80%;
     	background-color: #FBF5EC;
     }
 
+@media (min-width: 800px) {
+
+.menu__div {
+            height: 306px;
+            width: 643px
+    }
+	}
+
 .menu__title {
     	font-family: 'Playball', cursive;
-    	font-size: 3.4375rem;
+    	font-size: 3rem;
     	font-weight: 300;
-    	text-align: center
+    	text-align: center;
+        margin-top: 15%;
     }
 
-/*<img src="assets/images/pasta-fresca.jpg">
-	<img src="assets/images/catering.jpg">
-	<img src="assets/images/gallery.jpg">
-*/
+@media (min-width: 800px) {
+
+.menu__title {
+          font-size: 3.4375rem
+    }
+	}
+
+/***************************************************************
+STILE PER LA GALLERY VERSIONE MOBILE
+**************************************************************/
 
 .gallery {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+
+}
+
+.gallery__paragraph{
+		display: none;
+	}
+
+/****************************************************************
+STILE PER LA GALLERY VERSIONE DESKTOP
+*****************************************************************/
+
+@media (min-width: 800px) {
+	.gallery {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -640,18 +729,18 @@ font-family: 'Merienda', cursive;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
+	width: 941px;
+	height: 259px;
+	margin-top: 20px;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	width: 941px;
-	height: 259px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
 
 }
 
-.gallery__element {
+	.gallery__element {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -661,9 +750,10 @@ font-family: 'Merienda', cursive;
 		        flex-direction: column;
 		width: 33%;
 		height: 100%;
+
 	}
 
-.gallery__picture-1 {
+	.gallery__picture-1 {
 		height: 80%;
 		width: 100%;
 		margin: 0;
@@ -675,14 +765,16 @@ font-family: 'Merienda', cursive;
 		background-size: 100%;
 	}
 
-.gallery__picture-1:hover {
+	.gallery__picture-1:hover {
 		background-size: 120%;
 		-webkit-transition:all 0.5s ease;
 		transition:all 0.5s ease;
 
 	}
 
-.gallery__picture-2 {
+
+
+	.gallery__picture-2 {
 		height: 80%;
 		width: 100%;
 		margin: 0;
@@ -694,14 +786,16 @@ font-family: 'Merienda', cursive;
 
 	}
 
-.gallery__picture-2:hover {
+	.gallery__picture-2:hover {
 		background-size: 120%;
 		-webkit-transition:all 0.5s ease;
 		transition:all 0.5s ease;
 
 	}
 
-.gallery__picture-3 {
+
+
+	.gallery__picture-3 {
 		height: 80%;
 		width: 100%;
 		margin: 0;
@@ -712,14 +806,14 @@ font-family: 'Merienda', cursive;
 		background-size: 100%;
 	}
 
-.gallery__picture-3:hover {
+	.gallery__picture-3:hover {
 		background-size: 120%;
 		-webkit-transition:all 0.5s ease;
 		transition:all 0.5s ease;
 
 	}
 
-.gallery__paragraph {
+	.gallery__paragraph {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -750,6 +844,7 @@ font-family: 'Merienda', cursive;
 	-webkit-transition:all 0.5s ease;
 	transition:all 0.5s ease;
 }
+	}
 
 .piatti-veloci {
 	display: -webkit-box;
