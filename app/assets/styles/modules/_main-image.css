@@ -1,12 +1,20 @@
 .main-image {
-	height: 100vh;
-	width: 100vw;
-	/*quando usi postss la poszione del css e` nella cartella temp*/
-	background-image: url("../../assets/images/gastronomia.jpg");
-	background-repeat: no-repeat;
-	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
-    background-attachment: fixed;
-    background-size: cover;
+		height: 70vh;
+		width: 100vw;
+		/*quando usi postss la poszione del css e` nella cartella temp*/
+		background-image: url("../../assets/images/gastronomia.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+
+    @mixin atMedium {
+
+	    height: 100vh;
+		width: 100vw;
+		/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+	    background-attachment: fixed;
+	    
+
+    }
 
 }
 

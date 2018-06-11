@@ -2,7 +2,7 @@
 STILE PER LA GALLERY VERSIONE MOBILE
 **************************************************************/
 .gallery {
-	display: flex;
+	display: none;
 	flex-direction: column;
 
 	&__paragraph{

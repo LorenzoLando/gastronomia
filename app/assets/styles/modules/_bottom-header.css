@@ -21,8 +21,13 @@
 		width: 100px;
 		height: 100px;
 		margin-top: 15px;
+		position: relative;
+		left: 46vw ;
+		
+		
 
 		@mixin atMedium {
+			position: static;
 			font-size: .6rem;
 			padding: 0 15px;
 			width: none;

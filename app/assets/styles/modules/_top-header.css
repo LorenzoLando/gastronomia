@@ -6,7 +6,7 @@
 }
 
 .top-header {
-	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: space-around;
 	background-color: $mainColor;
@@ -17,6 +17,7 @@
 	height: 48px;
 
 	@mixin atMedium {
+		display: flex;
 		font-size: 1rem;
 		justify-content: flex-end;
 		

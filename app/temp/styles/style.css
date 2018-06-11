@@ -369,9 +369,7 @@ a {
 }
 
 .top-header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	display: none;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: row;
@@ -391,6 +389,9 @@ a {
 @media (min-width: 800px) {
 
 .top-header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
 		font-size: 1rem;
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
@@ -507,11 +508,14 @@ a {
 		width: 100px;
 		height: 100px;
 		margin-top: 15px;
+		position: relative;
+		left: 46vw ;
 	}
 
 @media (min-width: 800px) {
 
 .bottom-header__logo {
+			position: static;
 			font-size: .6rem;
 			padding: 0 15px;
 			width: none;
@@ -562,26 +566,43 @@ a {
 	}
 
 .main-image {
-	height: 100vh;
-	width: 100vw;
-	/*quando usi postss la poszione del css e` nella cartella temp*/
-	background-image: url("../../assets/images/gastronomia.jpg");
-	background-repeat: no-repeat;
-	/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
-    background-attachment: fixed;
-    background-size: cover;
+		height: 70vh;
+		width: 100vw;
+		/*quando usi postss la poszione del css e` nella cartella temp*/
+		background-image: url("../../assets/images/gastronomia.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
 
 }
 
+@media (min-width: 800px) {
+
+.main-image {
+
+	    height: 100vh;
+		width: 100vw;
+		/*questa proprieta permette di creare un immagine di background che sta fissa duramte lo scorrimento*/
+	    background-attachment: fixed
+
+}
+	}
+
 .section__icon {
 		margin-left: 48%;
-		margin-top: 79px;
+		margin-top: 15px;
 		text-align: center;
 		height: 48px;
 		width: 55px;
 		padding: 10px;
 		border: 2px solid #A51D29;
 		border-radius: 50px;
+	}
+
+@media (min-width: 800px) {
+
+.section__icon {
+			margin-top: 79px
+	}
 	}
 
 .section__title {
@@ -606,14 +627,24 @@ a {
 
 .section__paragraph {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 1rem;
+		font-size: .9rem;
 		font-weight: 400;
 		line-height: 24px;
 		color: #101010;
-		width: 80%;
-		margin: 30px auto;
+		width: 90%;
+		margin: 15px auto;
 		text-align: center;
 
+	}
+
+@media (min-width: 800px) {
+
+.section__paragraph {
+			font-size: 1rem;
+			width: 80%;
+			margin: 30px auto
+
+	}
 	}
 
 .section__btn {
@@ -633,7 +664,6 @@ a {
 
 .section--2 {
 	padding-top: 15px;
-	background-color: red;
 }
 
 @media (min-width: 800px) {
@@ -702,9 +732,7 @@ STILE PER LA GALLERY VERSIONE MOBILE
 **************************************************************/
 
 .gallery {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	display: none;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
@@ -850,18 +878,40 @@ STILE PER LA GALLERY VERSIONE DESKTOP
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
+	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	
 }
 
+@media (min-width: 800px) {
+
+.piatti-veloci {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row
+	
+}
+	}
+
 .piatti-veloci__text {
-		width: 50%;
+		width: 100%;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
+
+
+	}
+
+@media (min-width: 800px) {
+
+.piatti-veloci__text {
+			width: 50%
+
+
+	}
 	}
 
 .piatti-veloci__img {
@@ -945,4 +995,80 @@ STILE PER LA GALLERY VERSIONE DESKTOP
     	text-align: center;
     	width: 80%;
     	margin: 0 auto -55px auto;
+    }
+
+/*modal che comprende tutto lo schermo*/
+
+.modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+    }
+
+.modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        background-color: #A51D29;
+        padding: 1rem 1.5rem;
+        width: 24rem;
+        border-radius: 0.5rem;
+        color: white;
+    }
+
+.modal-content__social {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        }
+
+.modal-content__icon {
+            height: 5rem;
+            margin-right: 3rem;
+            
+
+        }
+
+.close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: lightgray;
+    }
+
+.close-button:hover {
+        background-color: darkgray;
+    }
+
+.show-modal {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+        -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
     }
